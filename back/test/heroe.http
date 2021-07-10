@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/api/heroe
+
+###
+POST http://localhost:3000/api/heroe
+Content-Type: application/json
+
+{
+    "nombre":"Barry Allen",
+    "heroe":"flash",
+    "poder":"velocidad",
+    "debilidad":"no se conoce",
+    "foto":"adsdsadsa",
+    "descripcion":"el hombre mas veloz"    
+}
+
+
+###
+PUT http://localhost:3000/api/heroe/60ea1175525740555c3add58
+Content-Type: application/json
+
+{
+    "nombre":"Barry Allen",
+    "heroe":"flash",
+    "poder":" super velocidad velocidad",
+    "debilidad":"no se conoce",
+    "edad":"35",
+    "foto":"adsdsadsa",
+    "descripcion":"el hombre mas veloz"    
+}
+
+###
+DELETE http://localhost:3000/api/heroe/60ea1175525740555c3add58
