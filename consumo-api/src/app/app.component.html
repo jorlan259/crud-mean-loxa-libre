@@ -1,0 +1,55 @@
+<div class="container shadow min-vh-100 py-2">
+
+
+
+  <div class="row">
+
+
+
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="nombre" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Nombre heroe</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="heroe">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Poder</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="poder">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Debilidad</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="debilidad">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="descripcion">
+      </div>
+
+      <button type="submit" class="btn btn-primary" (click)="guardarDatos()">Submit</button>
+    </div>
+
+
+
+
+    <div class="col-9">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4" *ngFor="let heroe of listaHeroes">
+            <div class="card" style="width: 18rem;">
+              <img [src]="heroe.foto" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{heroe.nombre}}</h5>
+                <p class="card-text">{{heroe.descripcion}}</p>
+                <button class="btn btn-primary" (click)="eliminarHereo(heroe.nombre)">Eliminar dato</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
