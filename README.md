@@ -5,7 +5,7 @@ Se desarrolla un crud básico, con el tema de heroes, lo importante es aprender 
 ## Comenzando 🚀
 
 elnace del video https://www.youtube.com/watch?v=DI20W7ElZNY 
-Introducción al #MEANStackComputadora personal Una sesión práctica para conversar y trabajar sobre este stack
+Introducción al #MEANStack personal Una sesión práctica para conversar y trabajar sobre este stack
 
 ### Pre-requisitos 📋
 
