@@ -1,4 +1,4 @@
-# ECrud Mean básico
+# Crud Mean básico
 
 Se desarrolla un crud básico, con el tema de heroes, lo importante es aprender las nociones base del stack mean
 
