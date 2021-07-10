@@ -36,7 +36,7 @@ exports.crearHeroe = async(req, res) => {
 exports.modificarHEroe = async(req, res) => {
     try {
     
-    const {nombre, heroe, poder, debilidad, foto, descripcion} = req.body
+    const {nombre, heroe, poder, debilidad, edad, foto, descripcion} = req.body
 
     let heroeDB = await Heroe.findById(req.params.id);
 
@@ -50,6 +50,7 @@ exports.modificarHEroe = async(req, res) => {
     heroeDB.heroe = heroe;
     heroeDB.poder = poder;
     heroeDB.debilidad = debilidad;
+    heroeDB.edad = edad;
     heroeDB.foto = foto;
     heroeDB.descripcion = descripcion;
 

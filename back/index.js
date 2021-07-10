@@ -1,5 +1,5 @@
 const express = require('express');
-const corts = require('cors');
+const cors = require('cors');
 const app = express();
 
 //conexion a base de datos

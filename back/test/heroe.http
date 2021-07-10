@@ -10,6 +10,7 @@ Content-Type: application/json
     "heroe":"flash",
     "poder":"velocidad",
     "debilidad":"no se conoce",
+    "edad":"35",
     "foto":"adsdsadsa",
     "descripcion":"el hombre mas veloz"    
 }
